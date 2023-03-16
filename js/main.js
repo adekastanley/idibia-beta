@@ -77,6 +77,14 @@ Pace.on("done", () => {
     );
 });
 
+// tilt 
+// VanillaTilt.init(document.querySelector("."), {
+//   max: 10,
+//   speed: 400
+// });
+
+//It also supports NodeList
+// VanillaTilt.init(document.querySelector("."));
 
 // 
 // section one - services
@@ -84,9 +92,9 @@ Pace.on("done", () => {
 
 
 
-setTimeout(() => {
-  const containers = document.querySelectorAll('.container');
-  containers.forEach((target)=> {
-    target.style.display = 'block'
-  })
-}, 6000);
+// setTimeout(() => {
+//   const containers = document.querySelectorAll('.container');
+//   containers.forEach((target)=> {
+//     target.style.display = 'block'
+//   })
+// }, 6000);
