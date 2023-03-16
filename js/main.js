@@ -95,6 +95,6 @@ Pace.on("done", () => {
 setTimeout(() => {
   const containers = document.querySelectorAll('.container');
   containers.forEach((target)=> {
-    target.style.display = 'block'
+    target.style.display = 'flex'
   })
 }, 3000);
