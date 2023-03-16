@@ -6,13 +6,13 @@ const toggler = document.querySelector(".nav-btn");
 
 
 gsap.timeline()
-.add("p")
+
 .to(".nav-container", {
-  delay: .8,
-  duration: 3,
+  delay: 3,
+  duration: 1,
   opacity: 1,
   yPercent: "BezierEasing(0.19,1,0.22,1)",
-},   "p");
+}, );
 
 let closed = true;
 toggler.addEventListener("click", () => {
@@ -77,16 +77,16 @@ Pace.on("done", () => {
     );
 });
 
-// toggler.addEventListener('click', ()=> {
-//   let closed = true;
 
-//   if (closed){
+// 
+// section one - services
+// 
 
-//     closed = false
 
-//   } else if (state === false ){
 
-//     closed = true;
-
-//   }
-// })
+setTimeout(() => {
+  const containers = document.querySelectorAll('.container');
+  containers.forEach((target)=> {
+    target.style.display = 'block'
+  })
+}, 6000);

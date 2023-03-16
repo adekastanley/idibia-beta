@@ -6,6 +6,7 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
+    /* outline: 2px solid purple; */
 }
 
 :root {
@@ -16,6 +17,7 @@
 header {
     position: relative;
     height: 100vh;
+    overflow: hidden;
 }
 .nav-container {
     width: 100%;
@@ -26,8 +28,6 @@ header {
     display: flex;
     height: 10dvh;
     opacity: 0;
-
-
 }
 .nav-btn {
     width: 3rem;
@@ -142,6 +142,7 @@ h1 {
     background-color: red;
     height: 20rem;
     width: 100%;
+    display: none;
 }
 
 @media screen and (min-width: 700px) {
@@ -150,5 +151,6 @@ h1 {
         width: 25%;
 
     }
+
 
 }
