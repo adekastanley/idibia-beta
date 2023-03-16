@@ -19,13 +19,14 @@ header {
 }
 .nav-container {
     width: 100%;
-    position: relative;
+    position: fixed;
     color: white;
     z-index: 3;
-    /* background-color: red; */
+    background-color: rgb(255, 255, 255);
     display: flex;
     height: 10dvh;
     opacity: 0;
+
 
 }
 .nav-btn {
