@@ -23,11 +23,11 @@ Pace.on('done', ()=> {
     opacity: 0,
     yPercent: 'BezierEasing(0.19,1,0.22,1)'
   },'p')
-  .to('.title', {
+  .to('.hero-img', {
     duration: 2,
     delay: .3,
     y: -10,
     opacity: 1,
     ease: Expo.easeInOut
-  })
+  }, "-=2.5")
 })
