@@ -1,0 +1,79 @@
+/* title font font-family: 'Squada One', cursive; */
+/* text font font-family: 'Poppins', sans-serif; */
+
+/* header {
+    width: 90%;
+    background-color: red;
+    margin-inline: auto;
+    
+} */
+
+/* .hero-img {
+    width: 80%;
+    margin-inline: auto;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --font-title: 'Squada One', cursive;
+    --font-text: 'Poppins', sans-serif;
+}
+.title {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    opacity: 0.3;
+}
+h1 {
+    font-family: var(--font-title);
+    
+}
+
+#preloader {
+    height: 100dvh;
+    width: 100dvw;
+    background-color: black;
+    position: fixed;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.loader-text{
+    letter-spacing: 30px;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    top: -50px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.pace {
+    pointer-events: none;
+    user-select: none;
+    z-index: 200;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+    border: 0;
+    height: 1px;
+    overflow: hidden;
+    background-color: red;
+}
+
+.pace .pace-progress {
+    max-width: 400px;
+    position: absolute;
+    z-index: 200;
+}
