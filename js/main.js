@@ -103,6 +103,8 @@ Pace.on("done", () => {
 // section 2
 // 
 
+
+// particles 
 particlesJS.load('particles-js', 'assets/particles.json', function() {
   console.log('callback - particles.js config loaded');
 });
@@ -228,3 +230,41 @@ particlesJS('particles-js',
   }
 
 );
+
+// text 
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.timeline()
+
+
+
+gsap.timeline()
+  .from(".section-2-top-text", {
+    delay: 1,
+    duration: 1,
+    opacity: 0,
+    y: 80,
+    yPercent: "BezierEasing(0.19,1,0.22,1)",
+    scrollTrigger: {
+      trigger: ".section-2-top-text",
+      start: "top 90%",
+      // end: "bottom top",
+      scrub: true
+    }
+  });
+
+gsap.timeline()
+  .from(".section-2-bottom-text", {
+    delay: 2,
+    duration: 1,
+    opacity: 0,
+    y: 80,
+    yPercent: "BezierEasing(0.19,1,0.22,1)",
+    scrollTrigger: {
+      trigger: ".section-2-bottom-text",
+      start: "top 90%",
+      // end: "bottom top",
+      scrub: true
+    }
+  });
+
