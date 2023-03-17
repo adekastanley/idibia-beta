@@ -143,8 +143,8 @@ h1 {
     /* background-color: red; */
     height: 100dvh;
     width: 100%;
-    /* display: none; */
-    display: flex;
+    display: none;
+    /* display: flex; */
     justify-content: center;
 
 
@@ -166,6 +166,7 @@ h1 {
 .section-2-content {
     position: absolute;
     margin-block: auto;
+    text-align: center;
     /* background-color: red; */
 }
 
@@ -175,7 +176,9 @@ h1 {
 
 
 .section-3 {
-    background-color: rgb(181, 181, 181);
+    margin-block: 6rem;
+
+    background-color: rgb(245, 245, 245);
     width: 80%;
     padding-inline: 5%;
     display: flex;
@@ -222,6 +225,13 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    box-shadow: .5px .5px .5px .5px   rgba(203, 203, 203, 0.615);
+}
+.service:hover {
+    background-color:  rgb(247, 247, 247);
+    box-shadow: .5px .5px .5px .5px  rgba rgb(245, 245, 245);
+
 }
 
 @media screen and (min-width: 700px) {

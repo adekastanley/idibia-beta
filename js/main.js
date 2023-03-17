@@ -81,12 +81,12 @@ Pace.on("done", () => {
 
 
 
-// setTimeout(() => {
-//   const containers = document.querySelectorAll('.container');
-//   containers.forEach((target)=> {
-//     target.style.display = 'flex'
-//   })
-// }, 3000);
+setTimeout(() => {
+  const containers = document.querySelectorAll('.container');
+  containers.forEach((target)=> {
+    target.style.display = 'flex'
+  })
+}, 3000);
 
 // 
 // section 2
@@ -237,7 +237,7 @@ gsap.timeline()
     scrollTrigger: {
       trigger: ".section-2-top-text",
       start: "top 90%",
-      // end: "bottom top",
+      end: "bottom 60%",
       scrub: true
     }
   });
@@ -252,7 +252,7 @@ gsap.timeline()
     scrollTrigger: {
       trigger: ".section-2-bottom-text",
       start: "top 90%",
-      // end: "bottom top",
+      end: "bottom 60%",
       scrub: true
     }
   })
