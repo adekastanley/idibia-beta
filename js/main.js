@@ -81,12 +81,12 @@ Pace.on("done", () => {
 
 
 
-setTimeout(() => {
-  const containers = document.querySelectorAll('.container');
-  containers.forEach((target)=> {
-    target.style.display = 'flex'
-  })
-}, 3000);
+// setTimeout(() => {
+//   const containers = document.querySelectorAll('.container');
+//   containers.forEach((target)=> {
+//     target.style.display = 'flex'
+//   })
+// }, 3000);
 
 // 
 // section 2
@@ -255,7 +255,35 @@ gsap.timeline()
       // end: "bottom top",
       scrub: true
     }
-  });
+  })
+  .from(".service", {
+    duration: 1,
+    opacity: 0,
+    y: 50,
+    stagger: .5,
+    yPercent: "BezierEasing(0.19,1,0.22,1)",
+    scrollTrigger: {
+      trigger: ".section-3",
+      start: "top 60%",
+      end: "bottom 80%",
+      scrub: true
+    }
+  })
+
+  .from(".left-tag-container", {
+
+    duration: 1,
+    opacity: 0,
+    x: -200,
+
+    yPercent: "BezierEasing(0.19,1,0.22,1)",
+    scrollTrigger: {
+      trigger: ".section-3",
+      start: "top bottom",
+      end: "bottom 80%",
+      scrub: true
+    }
+  })
 
 
 // gsap.timeline()
