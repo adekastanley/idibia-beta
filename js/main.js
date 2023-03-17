@@ -268,3 +268,19 @@ gsap.timeline()
     }
   });
 
+
+// gsap.timeline()
+//   .from(".one",{xPercent: -100})
+//     // .from(".two",{xPercent: 100})
+//     // .from(".three",{yPercent: 100})
+
+// ScrollTrigger.create({
+//   animation: '.one',
+//   trigger: ".section-3",
+//   start:  "top center",
+//   end: "+=4000",
+//   scrub: true,
+//   pin: true,
+//   anticipatePin: 1
+
+// })
