@@ -81,12 +81,12 @@ Pace.on("done", () => {
 
 
 
-setTimeout(() => {
-  const containers = document.querySelectorAll('.container');
-  containers.forEach((target)=> {
-    target.style.display = 'flex'
-  })
-}, 3000);
+// setTimeout(() => {
+//   const containers = document.querySelectorAll('.container');
+//   containers.forEach((target)=> {
+//     target.style.display = 'flex'
+//   })
+// }, 3000);
 
 // 
 // section 2
