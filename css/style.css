@@ -309,7 +309,7 @@ h1 {
     white-space: nowrap;
     scroll-behavior: smooth;
     padding-block: .3rem;
-    background-color: red;
+    /* background-color: red; */
   }
 
   .carousel.dragging{
