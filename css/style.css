@@ -371,7 +371,7 @@ h1 {
 .section-5 {
     background-color: white;
     padding-inline: 10%;
-    margin-top: 10rem;
+    margin-top: 40rem;
     display: flex;
     flex-direction: column;
     /* background-color: blue; */
@@ -387,6 +387,9 @@ h1 {
     align-items: center;
     /* border: solid 1px black; */
     box-shadow: 1px 15px .5px .5px  rgba rgb(0, 0, 0);
+  }
+  .contact-container h3 {
+    margin-bottom: 1rem;
   }
   .contact-item-container {
     outline: none;
