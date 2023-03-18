@@ -75,8 +75,12 @@ header {
     transform: translate(-50%, -50%);
     z-index: 2;
     opacity: 0;
+    transition: all ease-in-out .4s;
 }
-
+.hero-img:hover {
+    width: 85%;
+    box-shadow: 3px 6px 6px 1px rgba(0, 0, 0, 0.658);
+}
 
 
 h1 {
@@ -148,6 +152,7 @@ h1 {
     justify-content: center;
 
 
+
 }
 
 .section-2 {
@@ -184,6 +189,8 @@ h1 {
     display: flex;
     flex-direction: column;
     height: 50rem;
+    outline: 2px black solid;
+
     /* justify-content: center; */
     /* flex-direction: column; */
 }
@@ -237,10 +244,112 @@ h1 {
 
 }
 
+
+.section-4 {
+    margin-block: 16rem ;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* background-color: rgb(190, 0, 0); */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row; */
+    position: relative;
+}
+.section-4 h3 {
+    color: white;
+}
+
+.wrapper{
+    display: flex;
+
+    max-width: 1200px;
+    position: relative;
+    
+  }
+  .wrapper i{
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+    z-index: 2;
+    margin-inline: 1.5rem;
+
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.9);
+  }
+  .wrapper i:hover{
+    background: #f2f2f2;
+  }
+  .wrapper i:first-child{
+    left: -22px;
+    display: none;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding-block: 10rem;
+  }
+
+  .carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging img{
+    pointer-events: none;
+  }
+  .carousel img{
+    height: 340px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 3);
+    outline: 2px white solid;
+  }
+  .carousel img:first-child{
+    margin-left: 0px;
+  }
+  @media screen and (max-width: 900px) {
+    .carousel img{
+      width: calc(100% / 2);
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .carousel img{
+      width: 100%;
+    }
+  }
+
+/* 
+// media q
+*/
 @media screen and (min-width: 700px) {
 
     .hero-img {
         width: 25%;
+
+    }
+    .hero-img:hover {
+        width: 27%;
 
     }
 
