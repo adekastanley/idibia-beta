@@ -61,7 +61,7 @@ header {
     transform: translate(-250px);
 }
 .ul-wrapper a, li {
-    color: rgb(126, 0, 0);
+    color: rgb(0, 0, 0);
     z-index: 5;
 
 }
@@ -175,9 +175,9 @@ h1 {
     /* background-color: red; */
 }
 
-.section-2 p{
+/* .section-2 p{
 
-}
+} */
 
 
 .section-3 {
@@ -188,11 +188,16 @@ h1 {
     padding-inline: 5%;
     display: flex;
     flex-direction: column;
-    height: 50rem;
-    outline: .6px rgba(0, 0, 0, 0.278) solid;
+    height: 80rem;
 
-    /* justify-content: center; */
-    /* flex-direction: column; */
+    box-shadow: 1px 4px 4px .5px rgba(0, 0, 0, 0.278);
+    transition: all ease-in-out .3s;
+
+
+}
+.section-3:hover {
+    outline: none;
+    box-shadow: 3px 6px 6px 1px rgba(0, 0, 0, 0.278);
 }
 .section-3 .section-3-left  {
     display: flex;
@@ -201,9 +206,7 @@ h1 {
     /* background-color: red; */
     width: 100%;
     height: 30%;
-    margin-block: 1rem;
-
-    
+    margin-block: 1rem;   
 }
 
 .left-tag-container {
@@ -212,9 +215,6 @@ h1 {
 
 }
 .section-3 .section-3-right  {
-    /* position: relative; */
-
-
     width: 100%;
     height: 100%;
     /* background-color: green; */
@@ -224,7 +224,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
-    height: 40rem;
+    height: 60rem;
     /* background-color: yellow; */
 }
 .service {
@@ -246,7 +246,7 @@ h1 {
 
 
 .section-4 {
-    margin-block: 16rem ;
+    margin-block: 45rem ;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -359,6 +359,8 @@ h1 {
         /* background-color: blue; */
         height: 80dvh;
         flex-direction: row;
+        /* margin-bottom: 4rem; */
+        /* background-color: red; */
     }
 
     .section-3 .section-3-left  {
@@ -374,7 +376,10 @@ h1 {
         height: 100%;
 
     }
+    .section-4 {
+        margin-block: 0rem ;
 
+    }
 
     .section-4 h3 {
         color: white;
