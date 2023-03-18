@@ -3,10 +3,35 @@
 //
 
 const toggler = document.querySelector(".nav-btn");
+let rotated = false
+toggler.addEventListener('click', ()=> {
+  let lines = toggler.children
+  // console.log(lines[0])
+  if (rotated) {
+    lines[0].style.transform =' rotate(0deg)'
+    lines[2].style.transform =' rotate(0deg)'
+    lines[1].style.opacity =1
 
+
+
+    toggler.style.height =' 3rem'
+    rotated = false
+  } else {
+
+    lines[0].style.transform = ' rotate(45deg)'
+    lines[2].style.transform =' rotate(-45deg)'
+    lines[1].style.opacity =0
+    toggler.style.height =' 1.7rem'
+
+
+    rotated = true
+
+  }
+
+
+})
 
 gsap.timeline()
-
 .to(".nav-container", {
   delay: 3,
   duration: 1,
@@ -224,10 +249,6 @@ particlesJS('particles-js',
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.timeline()
-
-
-
-gsap.timeline()
   .from(".section-2-top-text", {
     delay: 1,
     duration: 1,
@@ -240,9 +261,7 @@ gsap.timeline()
       end: "bottom 60%",
       scrub: true
     }
-  });
-
-gsap.timeline()
+  })
   .from(".section-2-bottom-text", {
     delay: 2,
     duration: 1,
@@ -382,3 +401,11 @@ carousel.addEventListener("touchmove", dragging);
 
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
+
+// 
+// 
+// contact
+// 
+
+
+
