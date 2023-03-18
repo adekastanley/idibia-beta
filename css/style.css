@@ -189,7 +189,7 @@ h1 {
     display: flex;
     flex-direction: column;
     height: 50rem;
-    outline: 2px black solid;
+    outline: .6px rgba(0, 0, 0, 0.278) solid;
 
     /* justify-content: center; */
     /* flex-direction: column; */
@@ -261,6 +261,7 @@ h1 {
 }
 .section-4 h3 {
     color: white;
+    margin-block: 1rem;
 }
 
 .wrapper{
@@ -307,7 +308,8 @@ h1 {
     overflow: hidden;
     white-space: nowrap;
     scroll-behavior: smooth;
-    padding-block: 10rem;
+    padding-block: .3rem;
+    background-color: red;
   }
 
   .carousel.dragging{
@@ -371,6 +373,12 @@ h1 {
         grid-template-columns: repeat(2, 1fr);
         height: 100%;
 
+    }
+
+
+    .section-4 h3 {
+        color: white;
+        margin-block: 4rem;
     }
 
 
