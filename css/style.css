@@ -14,14 +14,21 @@
     --font-text-2: 'Open Sans', sans-serif;
     --font-text-1: 'Poppins', sans-serif;
 }
-a, li{
-    font-family: var(--font-title-1);
-    font-size: 30px;
+/* body {
+    scroll-snap-type: y mandatory;
+
+    height: 100dvh;
+    overflow-y: scroll;
+} */
+a{
+    font-family: var(--font-text-2);
+    font-size: 25px;
     font-weight: 300;
 }
 p {
-    font-family: var(--font-title-1);
-    font-size: 1.2rem; 
+    font-family: var(--font-text-1);
+    /* font-size: 1.2rem;  */
+    font-weight: li;
 }
 
 h3 {
@@ -194,6 +201,13 @@ h1 {
     display: none;
     /* display: flex; */
     justify-content: center;
+    /* scroll-snap-align: center; */
+
+
+}
+
+.points {
+ 
 }
 
 .section-2 {

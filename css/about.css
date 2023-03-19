@@ -1,3 +1,15 @@
+:root {
+    --font-title: 'Squada One', cursive;
+    --font-text-2: 'Open Sans', sans-serif;
+    --font-text-1: 'Inter', sans-serif;
+}
+
+p {
+    font-family: var(--font-title-1);
+    font-size: 1.2rem; 
+}
+
+
 /* 
 #preloader {
     height: 100dvh;
@@ -10,6 +22,17 @@
     margin: 0;
     padding: 0;
 } */
+.about-section-2 {
+    padding-inline: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.about-section-2 p {
+    text-align: center;
+}
 .about-container {
     /* margin: 0;
     padding: 0; */
@@ -36,7 +59,7 @@
 
  .about-section-2 {
     margin: 0;
-    /* padding: 0; */
+
  }
 
 
