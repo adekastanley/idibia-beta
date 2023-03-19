@@ -194,9 +194,6 @@ h1 {
     display: none;
     /* display: flex; */
     justify-content: center;
-
-
-
 }
 
 .section-2 {
@@ -412,6 +409,7 @@ h1 {
     padding-inline: 10%;
     margin-top: 40rem;
     margin-bottom: 40rem;
+
     /* padding-top: 5rem;
     padding-bottom: 5rem; */
     display: flex;
@@ -422,7 +420,7 @@ h1 {
 }
 
   .contact-container {
-    height: 90%;
+    height: 70%;
     width: 100%;
     margin-block: 10rem;
     /* background-color: rgb(0, 0, 0); */
@@ -438,7 +436,6 @@ h1 {
   }
   .contact-item-container {
     outline: none;
-    position: relative;
     /* background-color: red; */
     width: 100%;
     /* border: solid 1px black; */
@@ -511,7 +508,10 @@ h1 {
     /* padding-block: 1rem; */
     /* margin-top: 5rem; */
     justify-content: center;
-    background-color: red;
+    /* background-color: red; */
+    position: relative;
+    bottom: 4rem;
+    padding-bottom: 5rem;
   }
   footer ul {
     display: flex;
@@ -591,7 +591,21 @@ h1 {
       footer {
 
         margin-block: 10rem;
+        bottom: 0rem;
+        padding-bottom: 0rem;
 
+      }
+      footer i {
+
+        margin-inline: 2rem;
       }
     
 }
+
+/* 
+
+about page
+
+
+ */
+

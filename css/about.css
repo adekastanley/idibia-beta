@@ -1,0 +1,52 @@
+/* 
+#preloader {
+    height: 100dvh;
+} */
+.about-nav-container {
+    margin: 0;
+    padding: 0;
+}
+/* .container {
+    margin: 0;
+    padding: 0;
+} */
+.about-container {
+    /* margin: 0;
+    padding: 0; */
+    
+}
+.about-container h3{
+    margin: 0;
+    padding: 0;
+    
+}
+.about-contact-container {
+    margin: 0;
+    padding: 0; 
+}
+ .about-hero {
+    width: 60%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+ }
+ .about-hero:hover {
+    width: 65%;
+ }
+
+ .about-section-2 {
+    margin: 0;
+    /* padding: 0; */
+ }
+
+
+
+  @media screen and (max-width: 900px) {
+    * {
+        /* outline: blue 2px solid; */
+    }
+    footer {
+
+        top: 10rem;
+     }
+ } 
