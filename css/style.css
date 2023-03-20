@@ -7,6 +7,7 @@
     list-style-type: none;
     text-decoration: none;
     /* outline: 2px solid purple; */
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -14,12 +15,9 @@
     --font-text-2: 'Open Sans', sans-serif;
     --font-text-1: 'Poppins', sans-serif;
 }
-/* body {
-    scroll-snap-type: y mandatory;
-
-    height: 100dvh;
-    overflow-y: scroll;
-} */
+body {
+    /* scroll-behavior: smooth; */
+}
 a{
     font-family: var(--font-text-2);
     /* font-size: 25px; */
